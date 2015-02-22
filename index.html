@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body>
+
+  <h1>Body Language Log</h1>
+
+  <form action="sql.php" method="POST">
+
+    <input type="date" name="date">
+
+    <select name="meal">
+      <option>Which meal?</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+      <option value="Snack">Snack</option>
+    </select>
+
+    <textarea name="description" placeholder="What did you eat?"></textarea>
+
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <th>Ratio:</th>
+      </tr>
+      <tr>
+        <td class="ratio"><label><input type="radio" name="ratio" value="50/50"><span>50% CHO, 50% P/F</span></label></td>
+      </tr>
+      <tr>
+        <td class="ratio"><label><input type="radio" name="ratio" value="25/75"><span>25% CHO, 75% P/F</span></label></td>
+      </tr>
+      <tr>
+        <td class="ratio"><label><input type="radio" name="ratio" value="75/25"><span>75% CHO, 25% P/F</span></label></td>
+      </tr>
+    </table>
+
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <th colspan="2">Reactions:</th>
+      </tr>
+      <tr>
+        <td class="positive"><label><input type="radio" name="full" value=1><span>Feel full and content</span></label></td>
+        <td class="negative"><label><input type="radio" name="full" value=0><span>Feel full, but still hungry</span></label></td>
+      </tr>
+      <tr>
+        <td class="positive"><label><input type="radio" name="sweet-cravings" value=0><span>No sweet cravings</span></label></td>
+        <td class="negative"><label><input type="radio" name="sweet-cravings" value=1><span>Desire something sweet</span></label></td>
+      </tr>
+      <tr>
+        <td class="positive"><label><input type="radio" name="hungry" value=0><span>Not hungry at all</span></label></td>
+        <td class="negative"><label><input type="radio" name="hungry" value=1><span>Already hungry again</span></label></td>
+      </tr>
+      <tr class="spaceUnder">
+        <td class="positive"><label><input type="radio" name="snacking" value=0><span>No need for a snack</span></label></td>
+        <td class="negative"><label><input type="radio" name="snacking" value=1><span>Need to snack</span></label></td>
+      </tr>
+      <tr>
+        <td class="positive"><label><input type="radio" name="recharged" value=1><span>Feel recharged</span></label></td>
+        <td class="negative"><label><input type="radio" name="recharged" value=0><span>Energy has not improved</span></label></td>
+      </tr>
+      <tr>
+        <td class="positive"><label><input type="radio" name="even-energy" value=1><span>Energy is even</span></label></td>
+        <td class="negative"><label><input type="radio" name="even-energy" value=0><span>Feel wired, but tired</span></label></td>
+      </tr>
+      <tr class="spaceUnder">
+        <td class="positive"><label><input type="radio" name="crash" value=0><span>No feelings of crashing</span></label></td>
+        <td class="negative"><label><input type="radio" name="crash" value=1><span>Crashed and burned</span></label></td>
+      </tr>
+      <tr>
+        <td class="positive"><label><input type="radio" name="uplifted" value=1><span>Feel uplifted</span></label></td>
+        <td class="negative"><label><input type="radio" name="uplifted" value=0><span>Feel anxious/irritable</span></label></td>
+      </tr>
+      <tr>
+        <td class="positive"><label><input type="radio" name="clear-mind" value=1><span>Mind is clear with no fog</span></label></td>
+        <td class="negative"><label><input type="radio" name="clear-mind" value=0><span>Brain is foggy</span></label></td>
+      </tr>
+      <tr>
+        <td class="positive"><label><input type="radio" name="feel-good" value=1><span>Feel fine physically</span></label></td>
+        <td class="negative"><label><input type="radio" name="feel-good" value=0><span>Gut feels heavy</span></label></td>
+      </tr>
+    </table>
+
+    <input type="submit">
+
+  </form>
+</body>
+</html>
